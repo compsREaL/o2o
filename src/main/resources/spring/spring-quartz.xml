@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="productSellDaily" class="com.real.o2o.quartz.ProductSellDailyQuartz"/>
+
+    <!--1.创建jobDetail-->
+    <bean id="jobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="productSellDaily"/>
+        <property name="targetMethod" value="calculateProductSellDaily"/>
+        <property name="name" value="product_sell_daily_job"/>
+        <property name="group" value="job_product_sell_daily_group"/>
+        <property name="concurrent" value="false"/>
+    </bean>
+
+    <!--2.创建trigger-->
+    <bean id="trigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail" ref="jobDetail"/>
+        <property name="name" value="product_sell_daily_trigger"/>
+        <property name="group" value="job_product_sell_daily_group"/>
+        <property name="cronExpression">
+            <!--<value>0/3 * * * * ? *</value>-->
+            <value>0 0 0 * * ? *</value>
+        </property>
+    </bean>
+
+    <!--3.创建调度工厂-->
+    <bean id="scheduleFactpry" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="trigger"/>
+            </list>
+        </property>
+        <property name="autoStartup" value="true"/>
+    </bean>
+
+</beans>

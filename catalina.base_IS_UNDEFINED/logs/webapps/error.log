@@ -1,0 +1,8 @@
+2019-05-05 14:05:15.820 [main] ERROR com.real.o2o.service.impl.LocalAuthServiceImpl - insertLocalAuth error:
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'aaaa' for key 'unique_local_profile'
+### The error may exist in file [C:\Users\84428\IdeaProjects\o2o\target\classes\mapper\LocalAuthMapper.xml]
+### The error may involve com.real.o2o.dao.LocalAuthDao.insertLocalAuth-Inline
+### The error occurred while setting parameters
+### SQL: insert into         tb_local_auth(user_id,username,password,create_time,last_edit_time)         values         (?,?,?,?,?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'aaaa' for key 'unique_local_profile'
+; Duplicate entry 'aaaa' for key 'unique_local_profile'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'aaaa' for key 'unique_local_profile'

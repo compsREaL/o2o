@@ -1,0 +1,215 @@
+2019-05-06 12:36:04.201 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 12:36:04.207 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 12:36:05.761 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==>  Preparing: INSERT INTO tb_product_sell_daily(product_id,shop_id,create_time,total) values ( SELECT product_id,shop_id,date_format(create_time,'%Y-%m-%d'),count(product_id) AS total FROM tb_user_product_map WHERE date_format(create_time,'%Y-%m-%d') = date_sub(curdate(),interval 1 day) GROUP BY product_id ) 
+2019-05-06 12:36:05.812 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==> Parameters: 
+2019-05-06 12:43:52.374 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 12:43:52.376 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 12:43:53.460 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==>  Preparing: INSERT INTO tb_product_sell_daily(product_id,shop_id,create_time,total) ( SELECT product_id,shop_id,create_time,count(product_id) AS total FROM tb_user_product_map WHERE date_format(create_time,'%Y-%m-%d') = date_sub(curdate(),interval 1 day) GROUP BY product_id ) 
+2019-05-06 12:43:53.512 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==> Parameters: 
+2019-05-06 13:01:59.691 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:01:59.692 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:02:00.900 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==>  Preparing: INSERT INTO tb_product_sell_daily(product_id,shop_id,create_time,total) ( SELECT product_id,shop_id,create_time,count(product_id) AS total FROM tb_user_product_map WHERE date_format(create_time,'%Y-%m-%d') = date_sub(curdate(),interval 1 day) GROUP BY product_id,shop_id,create_time ) 
+2019-05-06 13:02:00.952 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==> Parameters: 
+2019-05-06 13:02:01.031 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - <==    Updates: 1
+2019-05-06 13:02:39.810 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:02:39.812 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:02:40.851 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==>  Preparing: INSERT INTO tb_product_sell_daily(product_id,shop_id,create_time,total) ( SELECT product_id,shop_id,create_time,count(product_id) AS total FROM tb_user_product_map WHERE date_format(create_time,'%Y-%m-%d') = date_sub(curdate(),interval 1 day) GROUP BY product_id,shop_id,create_time ) 
+2019-05-06 13:02:40.903 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==> Parameters: 
+2019-05-06 13:04:21.114 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:04:21.116 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:04:22.167 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - ==>  Preparing: insert into tb_user_product_map(create_time,point,user_id,product_id,shop_id,operator_id) values (?,?,?,?,?,?) 
+2019-05-06 13:04:22.228 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - ==> Parameters: 2019-05-06 13:04:21.907(Timestamp), 3(Integer), 1(Long), 1(Long), 1(Long), 2(Long)
+2019-05-06 13:04:22.281 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - <==    Updates: 1
+2019-05-06 13:04:22.314 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - ==>  Preparing: insert into tb_user_product_map(create_time,point,user_id,product_id,shop_id,operator_id) values (?,?,?,?,?,?) 
+2019-05-06 13:04:22.315 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - ==> Parameters: 2019-05-06 13:04:21.907(Timestamp), 3(Integer), 3(Long), 2(Long), 2(Long), 4(Long)
+2019-05-06 13:04:22.322 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - <==    Updates: 1
+2019-05-06 13:05:10.706 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:05:10.707 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:05:11.786 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==>  Preparing: INSERT INTO tb_product_sell_daily(product_id,shop_id,create_time,total) ( SELECT product_id,shop_id,create_time,count(product_id) AS total FROM tb_user_product_map WHERE date_format(create_time,'%Y-%m-%d') = date_sub(curdate(),interval 1 day) GROUP BY product_id,shop_id,create_time ) 
+2019-05-06 13:05:11.854 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==> Parameters: 
+2019-05-06 13:05:44.154 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:05:44.155 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:05:45.219 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==>  Preparing: INSERT INTO tb_product_sell_daily(product_id,shop_id,create_time,total) ( SELECT product_id,shop_id,create_time,count(product_id) AS total FROM tb_user_product_map WHERE date_format(create_time,'%Y-%m-%d') = date_sub(curdate(),interval 1 day) GROUP BY product_id,shop_id,create_time ) 
+2019-05-06 13:05:45.274 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==> Parameters: 
+2019-05-06 13:05:45.296 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - <==    Updates: 2
+2019-05-06 13:06:23.470 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:06:23.472 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:06:24.559 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==>  Preparing: INSERT INTO tb_product_sell_daily(product_id,shop_id,create_time,total) ( SELECT product_id,shop_id,date_format(create_time,'%Y-%m-%d'),count(product_id) AS total FROM tb_user_product_map WHERE date_format(create_time,'%Y-%m-%d') = date_sub(curdate(),interval 1 day) GROUP BY product_id,shop_id,create_time ) 
+2019-05-06 13:06:24.612 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==> Parameters: 
+2019-05-06 13:06:24.651 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - <==    Updates: 2
+2019-05-06 13:07:32.264 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:07:32.266 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:07:33.321 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==>  Preparing: INSERT INTO tb_product_sell_daily(product_id,shop_id,create_time,total) ( SELECT product_id,shop_id,date_format(create_time,'%Y-%m-%d'),count(product_id) AS total FROM tb_user_product_map WHERE date_format(create_time,'%Y-%m-%d') = date_sub(curdate(),interval 1 day) GROUP BY product_id,shop_id,create_time ) 
+2019-05-06 13:07:33.369 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==> Parameters: 
+2019-05-06 13:10:27.214 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:10:27.216 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:10:28.272 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==>  Preparing: INSERT INTO tb_product_sell_daily(product_id,shop_id,create_time,total) ( SELECT product_id,shop_id,date_format(create_time,'%Y-%m-%d'),count(product_id) AS total FROM tb_user_product_map WHERE date_format(create_time,'%Y-%m-%d') = date_sub(curdate(),interval 1 day) GROUP BY product_id,shop_id,create_time ) 
+2019-05-06 13:10:28.322 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==> Parameters: 
+2019-05-06 13:11:57.689 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:11:57.690 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:11:58.734 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==>  Preparing: INSERT INTO tb_product_sell_daily(product_id,shop_id,create_time,total) ( SELECT product_id,shop_id,date_format(create_time,'%Y-%m-%d'),count(product_id) AS total FROM tb_user_product_map WHERE date_format(create_time,'%Y-%m-%d') = date_sub(curdate(),interval 1 day) GROUP BY product_id,shop_id ) 
+2019-05-06 13:11:58.780 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==> Parameters: 
+2019-05-06 13:11:58.865 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - <==    Updates: 2
+2019-05-06 13:12:41.913 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:12:41.915 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:12:42.990 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==>  Preparing: INSERT INTO tb_product_sell_daily(product_id,shop_id,create_time,total) ( SELECT product_id,shop_id,date_format(create_time,'%Y-%m-%d'),count(product_id) AS total FROM tb_user_product_map WHERE date_format(create_time,'%Y-%m-%d') = date_sub(curdate(),interval 1 day) GROUP BY product_id ) 
+2019-05-06 13:12:43.031 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==> Parameters: 
+2019-05-06 13:12:43.051 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - <==    Updates: 2
+2019-05-06 13:13:39.153 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:13:39.155 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:13:40.191 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - ==>  Preparing: insert into tb_user_product_map(create_time,point,user_id,product_id,shop_id,operator_id) values (?,?,?,?,?,?) 
+2019-05-06 13:13:40.244 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - ==> Parameters: 2019-05-06 13:13:39.93(Timestamp), 3(Integer), 1(Long), 2(Long), 1(Long), 2(Long)
+2019-05-06 13:13:40.329 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - <==    Updates: 1
+2019-05-06 13:13:40.371 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - ==>  Preparing: insert into tb_user_product_map(create_time,point,user_id,product_id,shop_id,operator_id) values (?,?,?,?,?,?) 
+2019-05-06 13:13:40.373 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - ==> Parameters: 2019-05-06 13:13:39.93(Timestamp), 3(Integer), 3(Long), 2(Long), 2(Long), 4(Long)
+2019-05-06 13:13:40.380 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - <==    Updates: 1
+2019-05-06 13:14:25.051 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:14:25.053 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:14:26.150 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==>  Preparing: INSERT INTO tb_product_sell_daily(product_id,shop_id,create_time,total) ( SELECT product_id,shop_id,date_format(create_time,'%Y-%m-%d'),count(product_id) AS total FROM tb_user_product_map WHERE date_format(create_time,'%Y-%m-%d') = date_sub(curdate(),interval 1 day) GROUP BY product_id ) 
+2019-05-06 13:14:26.218 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==> Parameters: 
+2019-05-06 13:14:26.291 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - <==    Updates: 2
+2019-05-06 13:21:58.134 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:21:58.136 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:21:59.207 [main] DEBUG com.real.o2o.dao.ProductDao.insertProduct - ==>  Preparing: insert into tb_product(product_name,product_desc,img_addr,normal_price,promotion_price,priority,create_time,last_edit_time, enable_status,point,product_category_id,shop_id) values (?,?,?,?,?,?,?,?,?, ?,?,?) 
+2019-05-06 13:21:59.263 [main] DEBUG com.real.o2o.dao.ProductDao.insertProduct - ==> Parameters: 测试商品2(String), 测试描述2(String), test2(String), null, null, 1(Integer), 2019-05-06 13:21:58.933(Timestamp), 2019-05-06 13:21:58.933(Timestamp), 1(Integer), null, 1(Long), 2(Long)
+2019-05-06 13:21:59.344 [main] DEBUG com.real.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2019-05-06 13:23:49.147 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:23:49.148 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:23:50.239 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - ==>  Preparing: insert into tb_user_product_map(create_time,point,user_id,product_id,shop_id,operator_id) values (?,?,?,?,?,?) 
+2019-05-06 13:23:50.295 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - ==> Parameters: 2019-05-06 13:23:49.977(Timestamp), 3(Integer), 1(Long), 21(Long), 2(Long), 2(Long)
+2019-05-06 13:23:50.354 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - <==    Updates: 1
+2019-05-06 13:23:50.389 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - ==>  Preparing: insert into tb_user_product_map(create_time,point,user_id,product_id,shop_id,operator_id) values (?,?,?,?,?,?) 
+2019-05-06 13:23:50.391 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - ==> Parameters: 2019-05-06 13:23:49.977(Timestamp), 3(Integer), 3(Long), 2(Long), 1(Long), 4(Long)
+2019-05-06 13:23:50.398 [main] DEBUG c.r.o2o.dao.UserProductMapDao.insertUserProductMap - <==    Updates: 1
+2019-05-06 13:24:56.961 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:24:56.962 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:24:58.010 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==>  Preparing: INSERT INTO tb_product_sell_daily(product_id,shop_id,create_time,total) ( SELECT product_id,shop_id,date_format(create_time,'%Y-%m-%d'),count(product_id) AS total FROM tb_user_product_map WHERE date_format(create_time,'%Y-%m-%d') = date_sub(curdate(),interval 1 day) GROUP BY product_id ) 
+2019-05-06 13:24:58.065 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==> Parameters: 
+2019-05-06 13:24:58.165 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - <==    Updates: 3
+2019-05-06 13:28:38.678 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:28:38.679 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:28:39.805 [main] DEBUG c.r.o.d.P.queryProductSellDailyList - ==>  Preparing: select ps.create_time, p.product_id, p.product_name, s.shop_id, s.shop_name from tb_product_sell_daily ps, tb_product p, tb_shop s WHERE ps.product_id = p.product_id and ps.shop_id = s.shop_id and ps.shop_id = ? 
+2019-05-06 13:28:39.848 [main] DEBUG c.r.o.d.P.queryProductSellDailyList - ==> Parameters: 1(Long)
+2019-05-06 13:28:39.877 [main] DEBUG c.r.o.d.P.queryProductSellDailyList - <==      Total: 2
+2019-05-06 13:30:48.960 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:30:48.963 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:30:50.111 [main] DEBUG c.r.o.d.P.queryProductSellDailyList - ==>  Preparing: select ps.create_time, p.product_id, p.product_name, s.shop_id, s.shop_name from tb_product_sell_daily ps, tb_product p, tb_shop s WHERE ps.product_id = p.product_id and ps.shop_id = s.shop_id and ps.shop_id = ? 
+2019-05-06 13:30:50.164 [main] DEBUG c.r.o.d.P.queryProductSellDailyList - ==> Parameters: 1(Long)
+2019-05-06 13:30:50.190 [main] DEBUG c.r.o.d.P.queryProductSellDailyList - <==      Total: 2
+2019-05-06 13:31:56.991 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:31:56.992 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:31:58.071 [main] DEBUG c.r.o.d.P.queryProductSellDailyList - ==>  Preparing: select ps.create_time, ps.total, p.product_id, p.product_name, s.shop_id, s.shop_name from tb_product_sell_daily ps, tb_product p, tb_shop s WHERE ps.product_id = p.product_id and ps.shop_id = s.shop_id and ps.shop_id = ? 
+2019-05-06 13:31:58.122 [main] DEBUG c.r.o.d.P.queryProductSellDailyList - ==> Parameters: 1(Long)
+2019-05-06 13:31:58.149 [main] DEBUG c.r.o.d.P.queryProductSellDailyList - <==      Total: 2
+2019-05-06 13:34:23.679 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 13:34:23.681 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 13:34:24.772 [main] DEBUG c.r.o.d.P.queryProductSellDailyList - ==>  Preparing: select ps.product_id, ps.create_time, ps.total, p.product_id, p.product_name, s.shop_id, s.shop_name from tb_product_sell_daily ps, tb_product p, tb_shop s WHERE ps.product_id = p.product_id and ps.shop_id = s.shop_id and ps.shop_id = ? 
+2019-05-06 13:34:24.827 [main] DEBUG c.r.o.d.P.queryProductSellDailyList - ==> Parameters: 1(Long)
+2019-05-06 13:34:24.853 [main] DEBUG c.r.o.d.P.queryProductSellDailyList - <==      Total: 2
+2019-05-06 14:52:45.822 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 14:52:45.824 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 14:54:16.934 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 14:54:16.937 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 14:57:23.378 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 14:57:23.380 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 15:00:50.153 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 15:00:50.155 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 15:01:07.886 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 15:01:07.888 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 15:07:35.482 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 15:07:35.484 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 15:08:29.627 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 15:08:29.629 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 15:13:24.570 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 15:13:24.571 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 15:18:03.492 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 15:18:03.494 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 15:20:21.822 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 15:20:21.824 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 15:21:25.573 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 15:21:25.575 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 15:23:30.086 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 15:23:30.088 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 15:24:03.936 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 15:24:03.938 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 15:30:04.211 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 15:30:04.213 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 15:39:20.580 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 15:39:20.581 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 15:39:21.700 [main] DEBUG com.real.o2o.dao.UserShopMapDao.insertUserShopMap - ==>  Preparing: insert into tb_user_shop_map(create_time,point,user_id,shop_id) values (?,?,?,?) 
+2019-05-06 15:39:21.765 [main] DEBUG com.real.o2o.dao.UserShopMapDao.insertUserShopMap - ==> Parameters: 2019-05-06 15:39:21.395(Timestamp), 5(Integer), 1(Long), 1(Long)
+2019-05-06 15:39:21.850 [main] DEBUG com.real.o2o.dao.UserShopMapDao.insertUserShopMap - <==    Updates: 1
+2019-05-06 15:39:21.873 [main] DEBUG com.real.o2o.dao.UserShopMapDao.insertUserShopMap - ==>  Preparing: insert into tb_user_shop_map(create_time,point,user_id,shop_id) values (?,?,?,?) 
+2019-05-06 15:39:21.874 [main] DEBUG com.real.o2o.dao.UserShopMapDao.insertUserShopMap - ==> Parameters: 2019-05-06 15:39:21.395(Timestamp), 10(Integer), 1(Long), 2(Long)
+2019-05-06 15:39:21.882 [main] DEBUG com.real.o2o.dao.UserShopMapDao.insertUserShopMap - <==    Updates: 1
+2019-05-06 15:39:21.882 [main] DEBUG com.real.o2o.dao.UserShopMapDao.insertUserShopMap - ==>  Preparing: insert into tb_user_shop_map(create_time,point,user_id,shop_id) values (?,?,?,?) 
+2019-05-06 15:39:21.883 [main] DEBUG com.real.o2o.dao.UserShopMapDao.insertUserShopMap - ==> Parameters: 2019-05-06 15:39:21.395(Timestamp), 15(Integer), 2(Long), 1(Long)
+2019-05-06 15:39:21.889 [main] DEBUG com.real.o2o.dao.UserShopMapDao.insertUserShopMap - <==    Updates: 1
+2019-05-06 15:41:42.070 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 15:41:42.072 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 15:41:43.167 [main] DEBUG c.real.o2o.dao.UserShopMapDao.queryUserShopMapList - ==>  Preparing: select u.user_shop_id, u.create_time, u.point, us.user_id, us.name, s.shop_id, s.shop_name from tb_user_shop_map u, tb_person_info us, tb_shop s WHERE u.user_id = us.user_id and u.shop_id = s.shop_id limit ?,?; 
+2019-05-06 15:41:43.215 [main] DEBUG c.real.o2o.dao.UserShopMapDao.queryUserShopMapList - ==> Parameters: 0(Integer), 2(Integer)
+2019-05-06 15:41:43.246 [main] DEBUG c.real.o2o.dao.UserShopMapDao.queryUserShopMapList - <==      Total: 2
+2019-05-06 15:41:43.254 [main] DEBUG c.r.o2o.dao.UserShopMapDao.queryUserShopMapCount - ==>  Preparing: select count(1) from tb_user_shop_map u, tb_person_info us, tb_shop s WHERE u.user_id = us.user_id and u.shop_id = s.shop_id 
+2019-05-06 15:41:43.254 [main] DEBUG c.r.o2o.dao.UserShopMapDao.queryUserShopMapCount - ==> Parameters: 
+2019-05-06 15:41:43.256 [main] DEBUG c.r.o2o.dao.UserShopMapDao.queryUserShopMapCount - <==      Total: 1
+2019-05-06 15:44:39.132 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 15:44:39.134 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 15:44:40.227 [main] DEBUG com.real.o2o.dao.UserShopMapDao.queryUserShopMap - ==>  Preparing: select u.user_shop_id, u.create_time, u.point, us.user_id, us.name, s.shop_id, s.shop_name from tb_user_shop_map u, tb_person_info us, tb_shop s where u.user_id = us.user_id and u.shop_id = s.shop_id and u.user_id = ? and u.shop_id = ? 
+2019-05-06 15:44:40.274 [main] DEBUG com.real.o2o.dao.UserShopMapDao.queryUserShopMap - ==> Parameters: 1(Long), 2(Long)
+2019-05-06 15:44:40.302 [main] DEBUG com.real.o2o.dao.UserShopMapDao.queryUserShopMap - <==      Total: 1
+2019-05-06 15:47:08.138 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 15:47:08.140 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 15:47:09.291 [main] DEBUG c.r.o2o.dao.UserShopMapDao.updateUserShopMapPoint - ==>  Preparing: update tb_user_shop_map set point = ? where user_id = ? and shop_id=? 
+2019-05-06 15:47:09.352 [main] DEBUG c.r.o2o.dao.UserShopMapDao.updateUserShopMapPoint - ==> Parameters: 7(Integer), 1(Long), 1(Long)
+2019-05-06 15:47:09.373 [main] DEBUG c.r.o2o.dao.UserShopMapDao.updateUserShopMapPoint - <==    Updates: 1
+2019-05-06 16:26:59.462 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 16:26:59.465 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 16:27:01.096 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.insertShopAuthMap - ==>  Preparing: insert into tb_shop_auth_map(title,title_flag,create_time,last_edit_time,enable_status,employee_id,shop_id) values (?,?,?,?,?,?,?) 
+2019-05-06 16:27:01.156 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.insertShopAuthMap - ==> Parameters: CEO(String), 1(Integer), 2019-05-06 16:27:00.697(Timestamp), 2019-05-06 16:27:00.697(Timestamp), 1(Integer), 2(Long), 1(Long)
+2019-05-06 16:27:01.176 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.insertShopAuthMap - <==    Updates: 1
+2019-05-06 16:27:01.197 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.insertShopAuthMap - ==>  Preparing: insert into tb_shop_auth_map(title,title_flag,create_time,last_edit_time,enable_status,employee_id,shop_id) values (?,?,?,?,?,?,?) 
+2019-05-06 16:27:01.198 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.insertShopAuthMap - ==> Parameters: 店长(String), 2(Integer), 2019-05-06 16:27:00.697(Timestamp), 2019-05-06 16:27:00.697(Timestamp), 0(Integer), 4(Long), 2(Long)
+2019-05-06 16:27:01.203 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.insertShopAuthMap - <==    Updates: 1
+2019-05-06 16:28:14.233 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 16:28:14.234 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 16:28:15.382 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.insertShopAuthMap - ==>  Preparing: insert into tb_shop_auth_map(title,title_flag,create_time,last_edit_time,enable_status,employee_id,shop_id) values (?,?,?,?,?,?,?) 
+2019-05-06 16:28:15.452 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.insertShopAuthMap - ==> Parameters: CEO(String), 1(Integer), 2019-05-06 16:28:15.107(Timestamp), 2019-05-06 16:28:15.107(Timestamp), 1(Integer), 2(Long), 1(Long)
+2019-05-06 16:30:03.835 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 16:30:03.837 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 16:30:04.958 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.insertShopAuthMap - ==>  Preparing: insert into tb_shop_auth_map(title,title_flag,create_time,last_edit_time,enable_status,employee_id,shop_id) values (?,?,?,?,?,?,?) 
+2019-05-06 16:30:05.021 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.insertShopAuthMap - ==> Parameters: 店长(String), 2(Integer), 2019-05-06 16:30:04.697(Timestamp), 2019-05-06 16:30:04.697(Timestamp), 0(Integer), 5(Long), 1(Long)
+2019-05-06 16:30:05.110 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.insertShopAuthMap - <==    Updates: 1
+2019-05-06 16:31:20.701 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 16:31:20.702 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 16:31:21.904 [main] DEBUG c.real.o2o.dao.ShopAuthMapDao.queryShopAuthMapList - ==>  Preparing: select sa.shop_auth_id, sa.title, sa.title_flag, sa.create_time, sa.last_edit_time, sa.enable_status, e.user_id, e.name, s.shop_id, s.shop_name from tb_shop_auth_map sa, tb_person_info e, tb_shop s where sa.employee_id = e.user_id and sa.shop_id = s.shop_id and sa.shop_id = ? limit ?,? 
+2019-05-06 16:31:21.951 [main] DEBUG c.real.o2o.dao.ShopAuthMapDao.queryShopAuthMapList - ==> Parameters: 1(Long), 0(Integer), 3(Integer)
+2019-05-06 16:31:21.983 [main] DEBUG c.real.o2o.dao.ShopAuthMapDao.queryShopAuthMapList - <==      Total: 2
+2019-05-06 16:31:46.352 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 16:31:46.353 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 16:31:47.468 [main] DEBUG c.real.o2o.dao.ShopAuthMapDao.queryShopAuthMapList - ==>  Preparing: select sa.shop_auth_id, sa.title, sa.title_flag, sa.create_time, sa.last_edit_time, sa.enable_status, e.user_id, e.name, s.shop_id, s.shop_name from tb_shop_auth_map sa, tb_person_info e, tb_shop s where sa.employee_id = e.user_id and sa.shop_id = s.shop_id and sa.shop_id = ? limit ?,? 
+2019-05-06 16:31:47.528 [main] DEBUG c.real.o2o.dao.ShopAuthMapDao.queryShopAuthMapList - ==> Parameters: 1(Long), 0(Integer), 3(Integer)
+2019-05-06 16:31:47.560 [main] DEBUG c.real.o2o.dao.ShopAuthMapDao.queryShopAuthMapList - <==      Total: 2
+2019-05-06 16:31:47.568 [main] DEBUG c.r.o2o.dao.ShopAuthMapDao.queryShopAuthMapCount - ==>  Preparing: select count(1) from tb_shop_auth_map sa, tb_person_info e, tb_shop s where sa.employee_id = e.user_id and sa.shop_id = s.shop_id and sa.shop_id = ? 
+2019-05-06 16:31:47.568 [main] DEBUG c.r.o2o.dao.ShopAuthMapDao.queryShopAuthMapCount - ==> Parameters: 1(Long)
+2019-05-06 16:31:47.570 [main] DEBUG c.r.o2o.dao.ShopAuthMapDao.queryShopAuthMapCount - <==      Total: 1
+2019-05-06 16:33:15.212 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 16:33:15.213 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 16:33:16.298 [main] DEBUG c.real.o2o.dao.ShopAuthMapDao.queryShopAuthMapById - ==>  Preparing: select sa.shop_auth_id, sa.title, sa.title_flag, sa.create_time, sa.last_edit_time, sa.enable_status, e.user_id, e.name, s.shop_id, s.shop_name from tb_shop_auth_map sa, tb_person_info e, tb_shop s where sa.employee_id = e.user_id and sa.shop_id = s.shop_id and sa.shop_auth_id = ? 
+2019-05-06 16:33:16.343 [main] DEBUG c.real.o2o.dao.ShopAuthMapDao.queryShopAuthMapById - ==> Parameters: 1(Long)
+2019-05-06 16:33:16.373 [main] DEBUG c.real.o2o.dao.ShopAuthMapDao.queryShopAuthMapById - <==      Total: 1
+2019-05-06 16:35:15.485 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 16:35:15.487 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 16:35:16.719 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.updateShopAuthMap - ==>  Preparing: update tb_shop_auth_map SET enable_status = ? where shop_auth_id = ? 
+2019-05-06 16:35:16.768 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.updateShopAuthMap - ==> Parameters: 1(Integer), 4(Long)
+2019-05-06 16:35:16.795 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.updateShopAuthMap - <==    Updates: 1
+2019-05-06 16:36:17.500 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 16:36:17.502 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 16:36:18.599 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.deleteShopAuthMap - ==>  Preparing: delete from tb_shop_auth_map where shop_auth_id=? 
+2019-05-06 16:36:18.648 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.deleteShopAuthMap - ==> Parameters: 2(Long)
+2019-05-06 16:36:18.658 [main] DEBUG com.real.o2o.dao.ShopAuthMapDao.deleteShopAuthMap - <==    Updates: 1
+2019-05-06 16:41:57.991 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.password，解密前的结果：QAHlVoUc49w=,解密后的结果：123456
+2019-05-06 16:41:57.993 [main] DEBUG c.r.o2o.util.EncryptPropertyPlaceholderConfigurer - 加密的属性：jdbc.username，解密前的结果：WnplV/ietfQ=,解密后的结果：root
+2019-05-06 16:41:59.106 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==>  Preparing: INSERT INTO tb_product_sell_daily(product_id,shop_id,create_time,total) ( SELECT product_id,shop_id,date_format(create_time,'%Y-%m-%d'),count(product_id) AS total FROM tb_user_product_map WHERE date_format(create_time,'%Y-%m-%d') = date_sub(curdate(),interval 1 day) GROUP BY product_id ) 
+2019-05-06 16:41:59.160 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - ==> Parameters: 
+2019-05-06 16:41:59.264 [main] DEBUG c.r.o.d.ProductSellDailyDao.insertProductSellDaily - <==    Updates: 3

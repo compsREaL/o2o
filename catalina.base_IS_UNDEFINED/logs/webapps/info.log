@@ -1,0 +1,14 @@
+2019-05-06 21:36:35.615 [main] INFO  com.real.o2o.util.ShortNetAddressUtil - response string:
+2019-05-06 21:38:01.482 [main] INFO  com.real.o2o.util.ShortNetAddressUtil - response string:
+2019-05-06 21:40:15.297 [main] INFO  com.real.o2o.util.ShortNetAddressUtil - response string:
+2019-05-06 21:41:14.040 [main] INFO  com.real.o2o.util.ShortNetAddressUtil - response string:
+2019-05-06 21:42:15.428 [main] INFO  com.real.o2o.util.ShortNetAddressUtil - response string:
+2019-05-06 21:48:52.956 [main] INFO  com.real.o2o.util.ShortNetAddressUtil - response string:
+2019-05-06 21:49:40.317 [main] INFO  com.real.o2o.util.ShortNetAddressUtil - response string:{"Code":0,"ShortUrl":"https://dwz.cn/Cm0Qbnh5","LongUrl":"https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login","ErrMsg":""}
+2019-05-06 22:54:54.867 [main] INFO  com.real.o2o.util.ShortNetAddressUtil - response string:{"Code":0,"ShortUrl":"https://dwz.cn/Cm0Qbnh5","LongUrl":"https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login","ErrMsg":""}
+2019-05-06 22:54:55.058 [main] INFO  com.real.o2o.util.ShortNetAddressUtil - tinyUrl:https://dwz.cn/Cm0Qbnh5
+2019-05-06 22:56:34.696 [main] INFO  com.real.o2o.util.ShortNetAddressUtil - response string:{"Code":0,"ShortUrl":"https://dwz.cn/Cm0Qbnh5","LongUrl":"https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login","ErrMsg":""}
+2019-05-06 22:56:34.892 [main] INFO  com.real.o2o.util.ShortNetAddressUtil - shortUrl:https://dwz.cn/Cm0Qbnh5
+2019-05-06 22:57:16.023 [main] INFO  com.real.o2o.util.ShortNetAddressUtil - response string:
+2019-05-06 22:57:28.983 [main] INFO  com.real.o2o.util.ShortNetAddressUtil - response string:{"Code":0,"ShortUrl":"https://dwz.cn/Cm0Qbnh5","LongUrl":"https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login","ErrMsg":""}
+2019-05-06 22:57:29.290 [main] INFO  com.real.o2o.util.ShortNetAddressUtil - shortUrl:https://dwz.cn/Cm0Qbnh5
